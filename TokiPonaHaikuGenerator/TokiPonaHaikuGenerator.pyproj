@@ -21,8 +21,14 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Sentence.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="TokiPonaHaikuGenerator.py" />
     <Compile Include="TokiPonaWoord.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Util.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
