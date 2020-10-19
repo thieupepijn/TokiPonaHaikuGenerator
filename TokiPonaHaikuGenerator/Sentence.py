@@ -11,8 +11,9 @@ class Sentence(object):
     tpw1 = Util.ChooseRandomItem(woorden)
     woord1 = tpw1.woord
     currentsyllables = tpw1.syllables
-    syllables = int(syllables) - int(currentsyllables)
-    woorden = [w for w in woorden if TokiPonaWoord(w).syllables != syllables]
+    syllables = 2 #int(syllables) - int(currentsyllables)
+    boe = list(filter(lambda w: Util.SyllablesEqualTo(w, syllables), woorden))   
+    #boe = list(filter(None, woorden))
     woord2 = Util.ChooseRandomItem(woorden).woord 
     return [woord1, woord2]
  
