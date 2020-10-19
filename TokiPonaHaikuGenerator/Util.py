@@ -8,8 +8,4 @@ class Util:
   index = randint(0, numberofitems-1)
   return TokiPonaWoord(items[index])
 
- def SyllablesEqualTo(woord, count):
-  if TokiPonaWoord(woord).syllables == count:
-   return True
-  else:
-   return False
+ 
