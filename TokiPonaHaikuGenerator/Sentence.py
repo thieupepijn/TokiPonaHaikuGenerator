@@ -7,14 +7,16 @@ class Sentence(object):
     self.sentencewoorden = self.getwoorden(woorden, syllables)
 
  def getwoorden(self, woorden, syllables):
-    currentsyllables = 0
-    tpw1 = Util.ChooseRandomItem(woorden)
-    woord1 = tpw1.woord
-    currentsyllables = tpw1.syllables
-    syllables = 2 #int(syllables) - int(currentsyllables)
-    boe = list(filter(lambda w: Util.SyllablesEqualTo(w, syllables), woorden))   
-    #boe = list(filter(None, woorden))
-    woord2 = Util.ChooseRandomItem(woorden).woord 
-    return [woord1, woord2]
+    if (syllables == 5):
+     threesyllablewords = list(filter(lambda w: Util.SyllablesEqualTo(w, 3), woorden))
+     woord1 = Util.ChooseRandomItem(threesyllablewords).woord 
+     twosyllablewords = list(filter(lambda w: Util.SyllablesEqualTo(w, 2), woorden))
+     woord2 = Util.ChooseRandomItem(twosyllablewords).woord 
+     return [woord1, woord2]
+    elif(syllables == 7):
+     return []
+     
+              
+
  
    
