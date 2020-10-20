@@ -12,8 +12,9 @@ class Sentence(object):
    while sentencesyllables < numberofsyllables:
     words = list(filter(lambda w: TokiPonaWoord.SyllablesEqualOrLessThan(w,numberofsyllables - sentencesyllables), words))
     word = Util.ChooseRandomItem(words)
-    output.append(word.word)
-    sentencesyllables = sentencesyllables + word.syllables
+    words.remove(word)
+    output.append(TokiPonaWoord(word).word)
+    sentencesyllables = sentencesyllables + TokiPonaWoord(word).syllables
    return output
    
  

@@ -6,6 +6,6 @@ class Util:
  def ChooseRandomItem(items):
   numberofitems = len(items)
   index = randint(0, numberofitems-1)
-  return TokiPonaWoord(items[index])
+  return items[index]
 
  
