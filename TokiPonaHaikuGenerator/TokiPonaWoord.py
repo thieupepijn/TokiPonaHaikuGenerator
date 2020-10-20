@@ -11,6 +11,10 @@ class TokiPonaWoord(object):
  def SyllablesEqualTo(woord, syllables):
   return TokiPonaWoord(woord).syllables == syllables
 
+ @staticmethod
+ def SyllablesEqualOrLessThan(woord, syllables):
+  return TokiPonaWoord(woord).syllables <= syllables
+
 
 
 
