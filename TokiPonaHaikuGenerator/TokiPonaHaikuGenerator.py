@@ -2,7 +2,7 @@ from TokiPonaWoord import *
 from Util import *
 from Sentence import *
 
-dictionaryFile = open('D:\Matthieu\ThieuProgs\Python\TokiPona\Data\TokiPonaDictionary.txt')
+dictionaryFile = open('TokiPonaDictionary.txt')
 header = dictionaryFile.readline()
 
 items = dictionaryFile.readlines()
