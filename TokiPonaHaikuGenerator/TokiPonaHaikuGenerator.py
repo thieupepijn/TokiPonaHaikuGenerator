@@ -12,7 +12,7 @@ sentence1 = Sentence(items, 5)
 sentence2 = Sentence(items, 7)
 sentence3 = Sentence(items, 5)
 
-
+print() #first an empty line
 print(str.join(' ', sentence1.words))
 print(str.join(' ', sentence2.words))
 print(str.join(' ', sentence3.words))
